@@ -1,0 +1,33 @@
+{
+  "environment": "homolog",
+  "tests": [
+    {
+      "name": "Teste GET destinos pesquisados",
+      "requiresToken": true,
+      "url": "https://hmgreservas.rdcviagens.com.br/api/Associado/destinosPesquisados",
+      "method": "GET",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    }
+  ],
+  "load": {
+    "stages": [
+      { "duration": "10s", "target": 2 },
+      { "duration": "1s", "target": 1 },
+      { "duration": "1s", "target": 0 }
+    ],
+    "thresholds": {
+      "http_req_duration": ["p(95)<900"]
+    }
+  },
+  "smoke": {
+    "stages": [
+      { "duration": "1s", "target": 1 }
+    ],
+    "thresholds": {
+      "http_req_duration": ["p(95)<500"]
+    }
+  },
+  "sleepDuration": 1
+}

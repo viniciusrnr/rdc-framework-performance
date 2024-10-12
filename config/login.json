@@ -1,0 +1,20 @@
+{
+  "homolog": {
+    "url": "https://homologapinovosite.rdc-ferias.com.br/api/TwoFactorAutentication/login2fa",
+    "body": {
+      "granType": "Password",
+      "usuario": "ti.teste@rdcviagens.com.br",
+      "senha": "1234",
+      "dadosNavegador": ""
+    }
+  },
+  "prod": {
+    "url": "https://api.rdc-ferias.com.br/api/TwoFactorAutentication/login2fa",
+    "body": {
+      "granType": "Password",
+      "usuario": "prod.user@rdcviagens.com.br",
+      "senha": "prodSenha123",
+      "dadosNavegador": ""
+    }
+  }
+}
