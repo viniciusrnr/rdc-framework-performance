@@ -35,16 +35,16 @@ No arquivo config.json, você pode definir o ambiente e os estágios dos testes.
 ```bash
 {
   "homolog": {
-    "url": "https://homologapinovosite.rdc-ferias.com.br/api/TwoFactorAutentication/login2fa",
+    "url": "link_url",
     "body": {
       "grantType": "Password",
-      "usuario": "ti.teste@rdcviagens.com.br",
+      "usuario": "usuario",
       "senha": "1234",
       "dadosNavegador": ""
     }
   },
   "prod": {
-    "url": "https://api.rdc-ferias.com.br/api/TwoFactorAutentication/login2fa",
+    "url": "link_url",
     "body": {
       "grantType": "Password",
       "usuario": "prod.user@rdcviagens.com.br",
