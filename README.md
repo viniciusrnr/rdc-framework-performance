@@ -9,27 +9,28 @@ Este é um framework de automação de performance usando o k6 para realizar tes
 
 ## Instalação
 
-1. Clone o repositório:
+1. **Clone o repositório:**
    ```bash
    git clone <URL_DO_REPOSITORIO>
    cd rdc-framework-performance
    
-2. Instale o k6 (caso ainda não tenha instalado):
+2. **Instale o k6 (caso ainda não tenha instalado):**
 
 No Windows:
 Instruções de instalação do k6 para Windows
 
 3. Estrutura de Arquivos:
 
-config.json: Contém as configurações de ambiente, estágios de teste (ramp-up, stable, ramp-down), e thresholds de performance.
-login.json: Contém as informações de autenticação para diferentes ambientes (homolog, produção).
-tests/load_test.js: Teste de carga.
-tests/smoke_test.js: Teste de smoke.
-utils/auth.js: Função para autenticação.
-utils/report.js: Função para gerar relatórios.
+- config.json: Contém as configurações de ambiente, estágios de teste (ramp-up, stable, ramp-down), e thresholds de performance.
+- login.json: Contém as informações de autenticação para diferentes ambientes (homolog, produção).
+- tests/load_test.js: Teste de carga.
+- tests/smoke_test.js: Teste de smoke.
+- utils/auth.js: Função para autenticação.
+- utils/report.js: Função para gerar relatórios.
 
 
-4. Como Configurar
+4. **Como Configurar**
+
 Configurações de Ambiente
 No arquivo config.json, você pode definir o ambiente e os estágios dos testes. Exemplo:
 ```bash
@@ -56,6 +57,14 @@ No arquivo config.json, você pode definir o ambiente e os estágios dos testes.
 ```
 
 
+3. Teste de Smoke (Smoke Test)
+Certifique-se de que o ambiente e as configurações estão corretos em config.json.
+
+Para rodar o teste de smoke, execute o comando:
+```
+k6 run tests/smoke_test.js
+```
+
 5. Como Executar
 Teste de Carga (Load Test)
 1. Certifique-se de que o ambiente e as configurações estão corretos em config.json.
@@ -63,14 +72,6 @@ Teste de Carga (Load Test)
 2. Para rodar o teste de carga, execute o seguinte comando no terminal:
 ```
 k6 run tests/load_test.js
-```
-
-3. Teste de Smoke (Smoke Test)
-Certifique-se de que o ambiente e as configurações estão corretos em config.json.
-
-Para rodar o teste de smoke, execute o comando:
-```
-k6 run tests/smoke_test.js
 ```
 
 6. Relatório
