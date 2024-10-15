@@ -5,7 +5,7 @@ Este é um framework de automação de performance usando o k6 para realizar tes
 ## Requisitos
 
 - [Node.js](https://nodejs.org/) instalado.
-- [k6](https://k6.io/) instalado.
+- [k6](https://dl.k6.io/msi/k6-latest-amd64.msi) instalado.
 
 ## Instalação
 
@@ -13,11 +13,6 @@ Este é um framework de automação de performance usando o k6 para realizar tes
    ```bash
    git clone https://github.com/viniciusrnr/rdc-framework-performance.git
    cd rdc-framework-performance
-   
-2. **Instale o k6 (caso ainda não tenha instalado):**
-
-No Windows:
-Instruções de instalação do k6 para Windows
 
 3. **Estrutura de Arquivos:**
 
