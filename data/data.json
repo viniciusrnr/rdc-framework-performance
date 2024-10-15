@@ -1,0 +1,12 @@
+{
+  "usuarios": [
+    { "usuario": "user1", "senha": "password1" },
+    { "usuario": "user2", "senha": "password2" },
+    { "usuario": "user3", "senha": "password3" }
+  ],
+  "cidades": [
+    { "nome": "São Paulo" },
+    { "nome": "Rio de Janeiro" },
+    { "nome": "Belo Horizonte" }
+  ]
+}
